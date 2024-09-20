@@ -22,9 +22,14 @@ that the user can enter the number of the number of customers that were surveyed
 using namespace std;
 int main()
 {
-    int custumerCount = 16500;
+    int custumerCount;
+    cout << "Enter the number of people surveyed: ";
+    cin >> custumerCount;
+
     int purchaseCount = custumerCount * .15;
     int preferCount = purchaseCount * .58;
+
+
 
     cout << "The approximate number of customers in the survey who purchase one or more energy drinks per week: " << purchaseCount << endl;
     cout << "The approximate number of customers in the survey who prefer citrus-flavored energy drinks: " << preferCount << endl;
